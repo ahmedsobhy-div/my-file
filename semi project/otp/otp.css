@@ -1,0 +1,164 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-border-box;
+  background-color: #f4f5f7; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  display: flex;
+  width: 1140px; 
+  height: 580px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden; 
+  padding: 16px;
+  gap: 20px;
+}
+
+
+.div-1 {
+  width: 50%;
+  height: 100%;
+}
+
+.div-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+
+.div-2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.squares{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+  width: 50px;  
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.button {
+  padding: 14px 120px;
+  background-color: #e07a39; 
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last .resend{
+   border: none;
+   color: #E76F51;
+}
+a{
+    text-decoration: none;   
+}
+
+.last a{
+    color: #E76F51;
+}
+
+.button a{
+    color: #e0e0e0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 14px;
+    gap: 15px;
+  }
+  
+  .square {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+    height: auto;
+    max-width: 500px;
+  }
+
+  .div-1 {
+    width: 100%;
+    height: 220px;
+  }
+
+  .div-2 {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .button a{
+    padding: 14px 20px;
+    width: 100%;
+   
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    border-radius: 16px;
+    padding: 12px;
+  }
+
+  .div-1 {
+    height: 180px;
+  }
+
+  .squares {
+    gap: 8px; 
+  }
+
+  .square {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 15px;
+    padding: 12px 15px;
+  }
+}
